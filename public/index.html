@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canva</title>
+    <link rel="stylesheet" href="fontawesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="w-[95%] lg:w-[1140px] m-auto">
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+        <div class="grid grid-cols-12 rounded-b-3xl overflow-hidden">
+          <div class="col-span-8 bg-CommonBg-0 pl-5">
+            <div class="mt-[70px]">
+              <a href="#" class="flex items-center justify-center">
+                <img
+                  src="assets/images/logo.png"
+                  draggable="false"
+                  alt="Website Logo"
+                />
+              </a>
+            </div>
+            <div class="mt-[80px]">
+              <div
+                class="relative ml-5 mr-10 border border-PrimaryColor-0 rounded-t-xl rounded-r-xl bg-white pl-[50px] pb-4"
+              >
+                <div class="absolute top-6 -left-11">
+                  <img
+                    src="assets/images/profile-img.png"
+                    draggable="false"
+                    alt="Image"
+                  />
+                </div>
+                <p
+                  class="text-TextColor-0 font-Urbanist font-semibold flex items-center gap-[6px] pt-4"
+                >
+                  <img
+                    src="assets/images/location.png"
+                    draggable="false"
+                    alt="Icon"
+                  />London, UK
+                </p>
+                <h3
+                  class="font-Urbanist font-extrabold text-2xl text-PrimaryColor-0 mt-1 mb-1"
+                >
+                  David Chua
+                </h3>
+                <h5 class="font-Urbanist font-bold text-xl text-HeadingColor-0">
+                  30 Minute Meeting
+                </h5>
+              </div>
+              <div class="flex gap-[6px] mt-[60px]">
+                <div class="mt-1">
+                  <img src="assets/images/calendar.png" alt="Icon" />
+                </div>
+                <div class="flex-1">
+                  <p
+                    class="font-Urbanist font-bold text-lg text-TextColor2-0 mb-[6px]"
+                  >
+                    Thursday, September 15th, 2024
+                  </p>
+                  <h3
+                    class="font-Urbanist font-bold text-2xl text-HeadingColor-0 mb-[6px]"
+                  >
+                    9:30 AM - 11:00 AM
+                  </h3>
+                  <h6
+                    class="font-Urbanist font-bold text-lg text-HeadingColor-0"
+                  >
+                    Time Zone
+                  </h6>
+                </div>
+              </div>
+              <div class="flex items-start gap-1 mr-[26px] mt-1 mb-3">
+                <img
+                  src="assets/images/glove.png"
+                  draggable="false"
+                  alt="Icon"
+                  class="w-[inherit] mt-1"
+                />
+                <div class="flex-1 border-b border-[#d1d1d1] pb-[10px] w-full">
+                  <select
+                    name="time-zone"
+                    id="time-zone"
+                    class="outline-none border-none cursor-pointer bg-transparent text-TextColor-0 font-Urbanist font-bold text-sm w-full"
+                  >
+                    <option
+                      value="zone1"
+                      class="bg-PrimaryColor-0 text-white font-Urbanist"
+                    >
+                      Central Time - US & Canada (8:01am)
+                    </option>
+                    <option
+                      value="zone2"
+                      class="bg-PrimaryColor-0 text-white font-Urbanist"
+                    >
+                      Central Time - UK & London (7:01am)
+                    </option>
+                    <option
+                      value="zone3"
+                      class="bg-PrimaryColor-0 text-white font-Urbanist"
+                    >
+                      Central Time - USA & Dubai (6:01am)
+                    </option>
+                    <option
+                      value="zone4"
+                      class="bg-PrimaryColor-0 text-white font-Urbanist"
+                    >
+                      Central Time - UK & London (5:01am)
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="flex items-center gap-[6px] font-Urbanist font-medium text-TextColor2-0 text-2xl"
+                >
+                  <img
+                    src="assets/images/clock.png"
+                    draggable="false"
+                    alt="Icon"
+                  />1 Hour
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-4 bg-PrimaryColor-0 text-center pt-10">
+            <h5
+              class="font-Urbanist font-semibold text-white text-xl text-center"
+            >
+              Seleact <br />
+              Available Slot
+            </h5>
+            <div class="flex justify-between px-[22px]">
+              <button>
+                <img
+                  src="assets/images/long-arrow-left.png"
+                  draggable="false"
+                  alt="Icon"
+                />
+              </button>
+              <div>
+                <h1 class="font-Urbanist font-extrabold text-[72px] text-white">
+                  15
+                </h1>
+              </div>
+              <button>
+                <img
+                  src="assets/images/long-arrow-right.png"
+                  draggable="false"
+                  alt="Icon"
+                />
+              </button>
+            </div>
+            <div class="-mt-4">
+              <h4
+                class="font-Urbanist font-semibold text-white text-lg uppercase"
+              >
+                September
+              </h4>
+              <h6
+                class="font-Urbanist font-medium text-sm text-[#d1f3ff] uppercase"
+              >
+                Thursday
+              </h6>
+            </div>
+            <div class="px-8 mt-6">
+              <ul>
+                <li>
+                  <button
+                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                  >
+                    9:30 AM
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="font-Urbanist font-medium text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-full before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                  >
+                    10:30 AM
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                  >
+                    11:30 AM
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                  >
+                    12:30 PM
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                  >
+                    01:30 PM
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                  >
+                    02:30 PM
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                  >
+                    03:30 PM
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                  >
+                    4:30 PM
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="font-Urbanist font-medium text-white text-lg w-full py-3 mb-7 relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                  >
+                    5:30PM
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="flex">
+            <div class="flex flex-col justify-center gap-5 w-full">
+              <button
+                class="font-Urbanist font-extrabold text-base text-PrimaryColor-0 uppercase block border-b-2 border-PrimaryColor-0 w-full pb-[6px] relative before:absolute before:left-1/2 before:-translate-x-1/2 before:-bottom-[1px] before:[clip-path:polygon(50%_0%,_0%_100%,_100%_100%)] before:bg-PrimaryColor-0 before:h-2 before:w-[6px]"
+              >
+                Select Date
+              </button>
+              <button class="block">
+                <img
+                  src="assets/images/calendar-icon.png"
+                  draggable="false"
+                  alt="Icon"
+                  class="m-auto"
+                />
+              </button>
+            </div>
+            <div class="flex flex-col justify-center gap-5 w-full pt-2">
+              <button
+                class="font-Urbanist font-extrabold text-base text-HeadingColor-0 uppercase block border-b-2 border-[#dcdcdc] w-full pb-[6px]"
+              >
+                Personal info
+              </button>
+              <button class="block">
+                <img
+                  src="assets/images/personal-icon.png"
+                  draggable="false"
+                  alt="Icon"
+                  class="m-auto filter brightness-0 invert-1 opacity-75"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="mt-8">
+            <div class="flex justify-between items-center mb-3">
+              <button>
+                <img
+                  src="assets/images/arrow-left.png"
+                  draggable="false"
+                  alt="Icon"
+                />
+              </button>
+              <div class="text-center">
+                <h3
+                  class="font-Urbanist font-medium text-HeadingColor-0 text-[30px]"
+                >
+                  September
+                </h3>
+                <h6 class="font-Urbanist font-medium text-TextColor2-0 text-lg">
+                  2024
+                </h6>
+              </div>
+              <button>
+                <img
+                  src="assets/images/arrow-right.png"
+                  draggable="false"
+                  alt="Icon"
+                />
+              </button>
+            </div>
+            <div>
+              <div>
+                <ul class="flex justify-between">
+                  <li>
+                    <button
+                      class="font-Urbanist font-bold uppercase text-base text-TextColor-0"
+                    >
+                      MON
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="font-Urbanist font-bold uppercase text-base text-TextColor-0"
+                    >
+                      TUE
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="font-Urbanist font-bold uppercase text-base text-TextColor-0"
+                    >
+                      WED
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="font-Urbanist font-bold uppercase text-base text-TextColor-0"
+                    >
+                      THU
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="font-Urbanist font-bold uppercase text-base text-TextColor-0"
+                    >
+                      FRI
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="font-Urbanist font-bold uppercase text-base text-TextColor-0"
+                    >
+                      SAT
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="font-Urbanist font-bold uppercase text-base text-TextColor-0"
+                    >
+                      SUN
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-7 border-b border-[#f1f1f1] pb-3">
+                <ul class="flex justify-between mb-[21px]">
+                  <li>
+                    <button
+                      class="size-10 inline-block font-Urbanist font-semibold text-xl text-[#555555]"
+                    >
+                      28
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 inline-block font-Urbanist font-semibold text-xl text-[#555555]"
+                    >
+                      29
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 inline-block font-Urbanist font-semibold text-xl text-[#555555]"
+                    >
+                      30
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      1
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      2
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      3
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      4
+                    </button>
+                  </li>
+                </ul>
+                <ul class="flex justify-between mb-[21px]">
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      5
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      6
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      7
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      8
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      9
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      10
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      11
+                    </button>
+                  </li>
+                </ul>
+                <ul class="flex justify-between mb-[21px]">
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      12
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      13
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      14
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-white bg-PrimaryColor-0"
+                    >
+                      15
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      16
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      17
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      18
+                    </button>
+                  </li>
+                </ul>
+                <ul class="flex justify-between mb-[21px]">
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      19
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      20
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      21
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      22
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      23
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      24
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      25
+                    </button>
+                  </li>
+                </ul>
+                <ul class="flex justify-between mb-[21px]">
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      26
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      27
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      28
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      29
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      30
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      1
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-[#dddddd] hover:text-[#555555] hover:bg-[#eaeef1]"
+                    >
+                      2
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex justify-end mt-5">
+              <button
+                class="font-Urbanist font-bold text-lg text-PrimaryColor-0 space-x-1 flex gap-2"
+              >
+                Continue
+                <img
+                  src="assets/images/double-arrow-right.png"
+                  draggable="false"
+                  alt="Icon"
+                  class="relative top-[6px]"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
