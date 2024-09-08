@@ -13,6 +13,9 @@ module.exports = {
         TextColor: ["#777777"],
         TextColor2: ["#838f95"],
       },
+      boxShadow: {
+        shade: "3px 3px 10px rgba(8, 154, 205, 0.5)",
+      },
     },
   },
   plugins: [],

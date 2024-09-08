@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="w-[95%] lg:w-[1140px] m-auto">
+    <div class="w-[95%] lg:w-[1140px] mx-auto mb-[274px]">
       <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div class="grid grid-cols-12 rounded-b-3xl overflow-hidden">
           <div class="col-span-8 bg-CommonBg-0 pl-5">
@@ -236,9 +236,9 @@
         </div>
         <div>
           <div class="flex">
-            <div class="flex flex-col justify-center gap-5 w-full">
+            <div class="flex flex-col justify-center gap-5 w-full tab-btn group">
               <button
-                class="font-Urbanist font-extrabold text-base text-PrimaryColor-0 uppercase block border-b-2 border-PrimaryColor-0 w-full pb-[6px] relative before:absolute before:left-1/2 before:-translate-x-1/2 before:-bottom-[1px] before:[clip-path:polygon(50%_0%,_0%_100%,_100%_100%)] before:bg-PrimaryColor-0 before:h-2 before:w-[6px]"
+                class="font-Urbanist font-extrabold text-base text-PrimaryColor-0 uppercase block border-b-2 border-PrimaryColor-0 w-full pb-[6px] transition-all duration-500 group-hover:text-PrimaryColor-0 relative before:absolute before:left-1/2 before:-translate-x-1/2 before:-bottom-[1px] before:[clip-path:polygon(50%_0%,_0%_100%,_100%_100%)] before:bg-PrimaryColor-0 before:h-0 before:w-[6px] before:transition-all before:duration-500 group-hover:before:h-2"
               >
                 Select Date
               </button>
@@ -251,7 +251,7 @@
                 />
               </button>
             </div>
-            <div class="flex flex-col justify-center gap-5 w-full pt-2">
+            <div class="flex flex-col justify-center gap-5 w-full pt-2 tab-btn">
               <button
                 class="font-Urbanist font-extrabold text-base text-HeadingColor-0 uppercase block border-b-2 border-[#dcdcdc] w-full pb-[6px]"
               >
@@ -267,7 +267,7 @@
               </button>
             </div>
           </div>
-          <div class="mt-8">
+          <div class="mt-8 tab-content hidden transition-all duration-500">
             <div class="flex justify-between items-center mb-3">
               <button>
                 <img
@@ -475,7 +475,7 @@
                   </li>
                   <li>
                     <button
-                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-white bg-PrimaryColor-0"
+                      class="size-10 rounded inline-block transition-all duration-500 font-Urbanist font-semibold text-xl text-white bg-PrimaryColor-0 shadow-shade"
                     >
                       15
                     </button>
@@ -605,23 +605,102 @@
                   </li>
                 </ul>
               </div>
+              <div class="flex justify-end mt-5">
+                <button
+                  class="font-Urbanist font-bold text-lg text-PrimaryColor-0 space-x-1 flex gap-2"
+                >
+                  Continue
+                  <img
+                    src="assets/images/double-arrow-right.png"
+                    draggable="false"
+                    alt="Icon"
+                    class="relative top-[6px]"
+                  />
+                </button>
+              </div>
             </div>
-            <div class="flex justify-end mt-5">
-              <button
-                class="font-Urbanist font-bold text-lg text-PrimaryColor-0 space-x-1 flex gap-2"
-              >
-                Continue
-                <img
-                  src="assets/images/double-arrow-right.png"
-                  draggable="false"
-                  alt="Icon"
-                  class="relative top-[6px]"
-                />
-              </button>
+          </div>
+          <div class="mt-8 tab-content hidden transition-all duration-500">
+            <div>
+              <div class="flex justify-start mt-5">
+                <button
+                  class="font-Urbanist font-bold text-lg text-PrimaryColor-0 space-x-1 flex"
+                >
+                  <img
+                    src="assets/images/single-arrow-left.png"
+                    draggable="false"
+                    alt="Icon"
+                    class="relative top-1"
+                  />
+                  Back
+                </button>
+              </div>
+              <div>
+                <form action="#" method="get">
+                  <label
+                    for="first-name"
+                    class="block font-Urbanist text-sm font-semibold text-black mt-5"
+                    >First Name<input
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      placeholder="David"
+                      required
+                      class="block w-10/12 font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
+                  /></label>
+                  <label
+                    for="last-name"
+                    class="block font-Urbanist text-sm font-semibold text-black mt-7"
+                    >Last Name<input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      placeholder="Chua"
+                      required
+                      class="block w-10/12 font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
+                  /></label>
+                  <label
+                    for="email"
+                    class="block font-Urbanist text-sm font-semibold text-black mt-7"
+                    >E-Mail<input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="David Chua"
+                      required
+                      class="block w-10/12 font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
+                  /></label>
+                  <label
+                    for="city"
+                    class="block font-Urbanist text-sm font-semibold text-black mt-7"
+                    >City<input
+                      type="text"
+                      name="city"
+                      id="city"
+                      placeholder="London, UK"
+                      required
+                      class="block w-10/12 font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
+                  /></label>
+                </form>
+              </div>
+              <div class="flex justify-end mt-8">
+                <button
+                  class="font-Urbanist font-bold text-lg text-PrimaryColor-0 space-x-1 flex gap-2"
+                >
+                  Confirm Booking
+                  <img
+                    src="assets/images/double-arrow-right.png"
+                    draggable="false"
+                    alt="Icon"
+                    class="relative top-[6px]"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
