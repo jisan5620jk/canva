@@ -1,9 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Custom CSS */
 .tab-content.active {
-    display: block
+  display: block;
+}
+
+.tab-btn.active button{
+    color: #089acd;
+    border-color: #089acd;
+}
+
+
+.tab-btn.active button::before{
+    height: 8px;
+}
+
+
+.tab-btn.active button img{
+    filter: brightness(100%) invert(0);
+    opacity: 100%;
 }
 
 @tailwind base;

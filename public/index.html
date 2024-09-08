@@ -11,7 +11,7 @@
     <div class="w-[95%] lg:w-[1140px] mx-auto mb-[274px]">
       <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div class="grid grid-cols-12 rounded-b-3xl overflow-hidden">
-          <div class="col-span-8 bg-CommonBg-0 pl-5">
+          <div class="col-span-12 sm:col-span-8 bg-CommonBg-0 pl-5">
             <div class="mt-[70px]">
               <a href="#" class="flex items-center justify-center">
                 <img
@@ -125,7 +125,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-4 bg-PrimaryColor-0 text-center pt-10">
+          <div class="col-span-12 sm:col-span-4 bg-PrimaryColor-0 text-center pt-10">
             <h5
               class="font-Urbanist font-semibold text-white text-xl text-center"
             >
@@ -235,10 +235,12 @@
           </div>
         </div>
         <div>
-          <div class="flex">
-            <div class="flex flex-col justify-center gap-5 w-full tab-btn group">
+          <div class="flex mt-11">
+            <div
+              class="flex flex-col justify-center gap-5 w-full tab-btn group active"
+            >
               <button
-                class="font-Urbanist font-extrabold text-base text-PrimaryColor-0 uppercase block border-b-2 border-PrimaryColor-0 w-full pb-[6px] transition-all duration-500 group-hover:text-PrimaryColor-0 relative before:absolute before:left-1/2 before:-translate-x-1/2 before:-bottom-[1px] before:[clip-path:polygon(50%_0%,_0%_100%,_100%_100%)] before:bg-PrimaryColor-0 before:h-0 before:w-[6px] before:transition-all before:duration-500 group-hover:before:h-2"
+                class="font-Urbanist font-extrabold text-base text-HeadingColor-0 uppercase block border-b-2 border-[#dcdcdc] w-full pb-[6px] transition-all duration-500 group-hover:border-PrimaryColor-0 group-hover:text-PrimaryColor-0 relative before:absolute before:left-1/2 before:-translate-x-1/2 before:-bottom-[1px] before:[clip-path:polygon(50%_0%,_0%_100%,_100%_100%)] before:bg-PrimaryColor-0 before:h-0 before:w-[6px] before:transition-all before:duration-500 group-hover:before:h-2"
               >
                 Select Date
               </button>
@@ -247,27 +249,31 @@
                   src="assets/images/calendar-icon.png"
                   draggable="false"
                   alt="Icon"
-                  class="m-auto"
+                  class="m-auto filter transition-all duration-500 brightness-0 invert-1 opacity-75 group-hover:brightness-100 group-hover:invert-0 group-hover:opacity-100"
                 />
               </button>
             </div>
-            <div class="flex flex-col justify-center gap-5 w-full pt-2 tab-btn">
+            <div
+              class="flex flex-col justify-center gap-5 w-full tab-btn group pt-2"
+            >
               <button
-                class="font-Urbanist font-extrabold text-base text-HeadingColor-0 uppercase block border-b-2 border-[#dcdcdc] w-full pb-[6px]"
+                class="font-Urbanist font-extrabold text-base text-HeadingColor-0 uppercase block border-b-2 border-[#dcdcdc] w-full pb-[6px] transition-all duration-500 group-hover:border-PrimaryColor-0 group-hover:text-PrimaryColor-0 relative before:absolute before:left-1/2 before:-translate-x-1/2 before:-bottom-[1px] before:[clip-path:polygon(50%_0%,_0%_100%,_100%_100%)] before:bg-PrimaryColor-0 before:h-0 before:w-[6px] before:transition-all before:duration-500 group-hover:before:h-2"
               >
-                Personal info
+                Personal Info
               </button>
               <button class="block">
                 <img
                   src="assets/images/personal-icon.png"
                   draggable="false"
                   alt="Icon"
-                  class="m-auto filter brightness-0 invert-1 opacity-75"
+                  class="m-auto filter transition-all duration-500 brightness-0 invert-1 opacity-75 group-hover:brightness-100 group-hover:invert-0 group-hover:opacity-100"
                 />
               </button>
             </div>
           </div>
-          <div class="mt-8 tab-content hidden transition-all duration-500">
+          <div
+            class="mt-8 tab-content active hidden transition-all duration-500"
+          >
             <div class="flex justify-between items-center mb-3">
               <button>
                 <img
@@ -622,7 +628,7 @@
           </div>
           <div class="mt-8 tab-content hidden transition-all duration-500">
             <div>
-              <div class="flex justify-start mt-5">
+              <div class="flex justify-start mt-5 lg:px-[90px]">
                 <button
                   class="font-Urbanist font-bold text-lg text-PrimaryColor-0 space-x-1 flex"
                 >
@@ -637,64 +643,66 @@
               </div>
               <div>
                 <form action="#" method="get">
-                  <label
-                    for="first-name"
-                    class="block font-Urbanist text-sm font-semibold text-black mt-5"
-                    >First Name<input
-                      type="text"
-                      name="first-name"
-                      id="first-name"
-                      placeholder="David"
-                      required
-                      class="block w-10/12 font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
-                  /></label>
-                  <label
-                    for="last-name"
-                    class="block font-Urbanist text-sm font-semibold text-black mt-7"
-                    >Last Name<input
-                      type="text"
-                      name="last-name"
-                      id="last-name"
-                      placeholder="Chua"
-                      required
-                      class="block w-10/12 font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
-                  /></label>
-                  <label
-                    for="email"
-                    class="block font-Urbanist text-sm font-semibold text-black mt-7"
-                    >E-Mail<input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="David Chua"
-                      required
-                      class="block w-10/12 font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
-                  /></label>
-                  <label
-                    for="city"
-                    class="block font-Urbanist text-sm font-semibold text-black mt-7"
-                    >City<input
-                      type="text"
-                      name="city"
-                      id="city"
-                      placeholder="London, UK"
-                      required
-                      class="block w-10/12 font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
-                  /></label>
+                  <div class="lg:px-[90px]">
+                    <label
+                      for="first-name"
+                      class="block font-Urbanist text-sm font-semibold text-black mt-5"
+                      >First Name<input
+                        type="text"
+                        name="first-name"
+                        id="first-name"
+                        placeholder="David"
+                        required
+                        class="block w-full font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
+                    /></label>
+                    <label
+                      for="last-name"
+                      class="block font-Urbanist text-sm font-semibold text-black mt-7"
+                      >Last Name<input
+                        type="text"
+                        name="last-name"
+                        id="last-name"
+                        placeholder="Chua"
+                        required
+                        class="block w-full font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
+                    /></label>
+                    <label
+                      for="email"
+                      class="block font-Urbanist text-sm font-semibold text-black mt-7"
+                      >E-Mail<input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="David Chua"
+                        required
+                        class="block w-full font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
+                    /></label>
+                    <label
+                      for="city"
+                      class="block font-Urbanist text-sm font-semibold text-black mt-7"
+                      >City<input
+                        type="text"
+                        name="city"
+                        id="city"
+                        placeholder="London, UK"
+                        required
+                        class="block w-full font-Urbanist pb-2 font-semibold text-base text-TextColor2-0 outline-none border-b"
+                    /></label>
+                  </div>
+                  <div class="flex justify-end mt-8">
+                    <button
+                      class="font-Urbanist font-bold text-lg text-PrimaryColor-0 space-x-1 flex gap-2"
+                    >
+                      Confirm Booking
+                      <img
+                        src="assets/images/double-arrow-right.png"
+                        draggable="false"
+                        alt="Icon"
+                        class="relative top-[6px]"
+                      />
+                    </button>
+                  </div>
                 </form>
-              </div>
-              <div class="flex justify-end mt-8">
-                <button
-                  class="font-Urbanist font-bold text-lg text-PrimaryColor-0 space-x-1 flex gap-2"
-                >
-                  Confirm Booking
-                  <img
-                    src="assets/images/double-arrow-right.png"
-                    draggable="false"
-                    alt="Icon"
-                    class="relative top-[6px]"
-                  />
-                </button>
               </div>
             </div>
           </div>
