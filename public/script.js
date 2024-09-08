@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.querySelectorAll(".time-btn button, .time-btn button");
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      buttons.forEach(function (btn) {
+        btn.classList.remove("active");
+      });
+      this.classList.add("active");
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".tab-btn");
   const all_content = document.querySelectorAll(".tab-content");
 

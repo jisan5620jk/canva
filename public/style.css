@@ -2,22 +2,45 @@
 
 /* Custom CSS */
 
+.time-btn button.active {
+  color: #089acd;
+}
+
+.time-btn button.active::before {
+  height: 100%;
+  top: 0;
+  bottom: auto;
+}
+
 .tab-content.active {
   display: block;
 }
 
-.tab-btn.active button{
+.tab-btn.active button {
   color: #089acd;
   border-color: #089acd;
 }
 
-.tab-btn.active button::before{
+.tab-btn.active button::before {
   height: 8px;
 }
 
-.tab-btn.active button img{
+.tab-btn.active button img {
   filter: brightness(100%) invert(0);
   opacity: 100%;
+}
+
+.time-btn::-webkit-scrollbar {
+  width: 3px;
+}
+
+.time-btn::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.time-btn::-webkit-scrollbar-thumb {
+  background-color: #8bdbfd;
+  border-radius: 0;
 }
 
 /* ! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com */
@@ -659,10 +682,6 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mt-11{
   margin-top: 2.75rem;
 }
@@ -718,6 +737,10 @@ video {
 .size-10{
   width: 2.5rem;
   height: 2.5rem;
+}
+
+.h-\[476px\]{
+  height: 476px;
 }
 
 .w-\[95\%\]{
@@ -796,14 +819,6 @@ video {
   gap: 6px;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
-.gap-y-10{
-  row-gap: 2.5rem;
-}
-
 .space-x-1 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
@@ -812,6 +827,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-y-auto{
+  overflow-y: auto;
 }
 
 .rounded{
@@ -892,9 +911,14 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-\[22px\]{
@@ -905,6 +929,10 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pb-2{
@@ -945,10 +973,6 @@ video {
 
 .pt-4{
   padding-top: 1rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
 }
 
 .text-center{
@@ -1131,11 +1155,6 @@ video {
   height: 0px;
 }
 
-.before\:h-full::before{
-  content: var(--tw-content);
-  height: 100%;
-}
-
 .before\:w-\[6px\]::before{
   content: var(--tw-content);
   width: 6px;
@@ -1251,14 +1270,6 @@ video {
 
   .sm\:mr-10{
     margin-right: 2.5rem;
-  }
-
-  .sm\:mt-0{
-    margin-top: 0px;
-  }
-
-  .sm\:gap-0{
-    gap: 0px;
   }
 
   .sm\:pb-0{

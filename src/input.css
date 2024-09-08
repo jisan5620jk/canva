@@ -1,24 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Custom CSS */
+.time-btn button.active {
+  color: #089acd;
+}
+
+.time-btn button.active::before {
+  height: 100%;
+  top: 0;
+  bottom: auto;
+}
+
 .tab-content.active {
   display: block;
 }
 
-.tab-btn.active button{
-    color: #089acd;
-    border-color: #089acd;
+.tab-btn.active button {
+  color: #089acd;
+  border-color: #089acd;
 }
 
-
-.tab-btn.active button::before{
-    height: 8px;
+.tab-btn.active button::before {
+  height: 8px;
 }
 
+.tab-btn.active button img {
+  filter: brightness(100%) invert(0);
+  opacity: 100%;
+}
 
-.tab-btn.active button img{
-    filter: brightness(100%) invert(0);
-    opacity: 100%;
+.time-btn::-webkit-scrollbar {
+  width: 3px;
+}
+
+.time-btn::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.time-btn::-webkit-scrollbar-thumb {
+  background-color: #8bdbfd;
+  border-radius: 0;
 }
 
 @tailwind base;
