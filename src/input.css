@@ -1,14 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Custom CSS */
+
 .time-btn button.active {
-  color: #089acd;
+  color: white;
 }
 
 .time-btn button.active::before {
-  height: 100%;
-  top: 0;
-  bottom: auto;
+  width: 100%;
+  left: 0;
+}
+
+.time-btn button.active::after {
+  transform: scale(1);
+}
+
+@media screen and (min-width: 640px) {
+  .time-btn button.active {
+    color: #089acd;
+  }
+
+  .time-btn button.active::before {
+    height: 100%;
+    top: 0;
+    bottom: auto;
+  }
+  .time-btn button.active::after {
+  transform: scale(0);
+}
 }
 
 .tab-content.active {
@@ -56,21 +75,21 @@
 }
 
 #month {
-    font-size: 30px;
-    line-height: 18px;
-    color: #002931;
-    font-weight: 500;
-    font-family: "Urbanist";
-    text-align: center;
+  font-size: 30px;
+  line-height: 18px;
+  color: #002931;
+  font-weight: 500;
+  font-family: "Urbanist";
+  text-align: center;
 }
 
 #year {
-    font-size: 18px;
-    line-height: 18px;
-    color: #777777;
-    font-weight: 500;
-    font-family: "Urbanist";
-    padding-top: 12px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #777777;
+  font-weight: 500;
+  font-family: "Urbanist";
+  padding-top: 12px;
 }
 
 .calendar-header button {
@@ -97,7 +116,7 @@
   text-align: center;
   font-weight: 700;
   font-family: "Urbanist", "sans-serif";
-    margin: 7px auto 20px;
+  margin: 7px auto 20px;
 }
 
 .calendar-days div {

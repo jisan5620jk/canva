@@ -14,130 +14,138 @@
           <div
             class="col-span-12 sm:col-span-8 bg-CommonBg-0 pl-5 pb-10 sm:pb-0"
           >
-            <div class="mt-[70px]">
-              <a href="#" class="flex items-center justify-center">
-                <img
-                  src="assets/images/logo.png"
-                  draggable="false"
-                  alt="Website Logo"
-                />
-              </a>
-            </div>
-            <div class="mt-[80px]">
-              <div
-                class="relative ml-5 mr-1 sm:mr-10 border border-PrimaryColor-0 rounded-t-xl rounded-r-xl bg-white pl-[50px] pb-4"
-              >
-                <div class="absolute top-6 -left-11">
+            <div
+              class="mt-10 inline-block relative ml-5 mr-1 sm:mr-10 border border-PrimaryColor-0 rounded-xl bg-white pb-4"
+            >
+              <div class="mt-3">
+                <a href="#" class="flex items-center justify-center">
+                  <img
+                    src="assets/images/logo.png"
+                    draggable="false"
+                    alt="Website Logo"
+                  />
+                </a>
+              </div>
+              <div class="mt-[20px]">
+                <div class="absolute top-[108px] -left-11">
                   <img
                     src="assets/images/profile-img.png"
                     draggable="false"
                     alt="Image"
                   />
                 </div>
-                <p
-                  class="text-TextColor-0 font-Urbanist font-semibold flex items-center gap-[6px] pt-4"
-                >
-                  <img
-                    src="assets/images/location.png"
-                    draggable="false"
-                    alt="Icon"
-                  />London, UK
-                </p>
-                <h3
-                  class="font-Urbanist font-extrabold text-2xl text-PrimaryColor-0 mt-1 mb-1"
-                >
-                  David Chua
-                </h3>
-                <h5 class="font-Urbanist font-bold text-xl text-HeadingColor-0">
-                  30 Minute Meeting
-                </h5>
-              </div>
-              <div class="flex gap-[6px] mt-[60px]">
-                <div class="mt-1">
-                  <img src="assets/images/calendar.png" alt="Icon" />
-                </div>
-                <div class="flex-1">
+                <div class="pl-[50px]">
                   <p
-                    class="font-Urbanist font-bold text-lg text-TextColor2-0 mb-[6px]"
+                    class="text-TextColor-0 font-Urbanist font-semibold flex items-center gap-[6px] pt-4"
                   >
-                    Thursday, September 15th, 2024
+                    <img
+                      src="assets/images/location.png"
+                      draggable="false"
+                      alt="Icon"
+                    />London, UK
                   </p>
                   <h3
-                    class="font-Urbanist font-bold text-2xl text-HeadingColor-0 mb-[6px]"
+                    class="font-Urbanist font-extrabold text-2xl text-PrimaryColor-0 mt-1 mb-1"
                   >
-                    9:30 AM - 11:00 AM
+                    David Chua
                   </h3>
-                  <h6
-                    class="font-Urbanist font-bold text-lg text-HeadingColor-0"
+                  <h5
+                    class="font-Urbanist font-bold text-xl text-HeadingColor-0"
                   >
-                    Time Zone
-                  </h6>
+                    30 Minute Meeting
+                  </h5>
                 </div>
-              </div>
-              <div class="flex items-start gap-1 mr-[26px] mt-1 mb-3">
-                <img
-                  src="assets/images/glove.png"
-                  draggable="false"
-                  alt="Icon"
-                  class="w-[inherit] mt-1"
-                />
-                <div class="flex-1 border-b border-[#d1d1d1] pb-[10px] w-full">
-                  <select
-                    name="time-zone"
-                    id="time-zone"
-                    class="outline-none border-none cursor-pointer bg-transparent text-TextColor-0 font-Urbanist font-bold text-sm w-full"
-                  >
-                    <option
-                      value="zone1"
-                      class="bg-PrimaryColor-0 text-white font-Urbanist"
+                <div class="pl-6">
+                  <div class="flex gap-[6px] mt-[20px]">
+                    <div class="mt-1">
+                      <img src="assets/images/calendar.png" alt="Icon" />
+                    </div>
+                    <div class="flex-1">
+                      <p
+                        class="font-Urbanist font-bold text-lg text-TextColor2-0 mb-[6px]"
+                      >
+                        Thursday, September 15th, 2024
+                      </p>
+                      <h3
+                        class="font-Urbanist font-bold text-xl sm:text-2xl text-HeadingColor-0 mb-[6px]"
+                      >
+                        9:30 AM - 11:00 AM
+                      </h3>
+                      <h6
+                        class="font-Urbanist font-bold text-lg text-HeadingColor-0"
+                      >
+                        Time Zone
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-1 mr-[26px] mt-1 mb-3">
+                    <img
+                      src="assets/images/glove.png"
+                      draggable="false"
+                      alt="Icon"
+                      class="w-[inherit] mt-1"
+                    />
+                    <div
+                      class="flex-1 border-b border-[#d1d1d1] pb-[10px] w-full"
                     >
-                      Central Time - US & Canada (8:01am)
-                    </option>
-                    <option
-                      value="zone2"
-                      class="bg-PrimaryColor-0 text-white font-Urbanist"
+                      <select
+                        name="time-zone"
+                        id="time-zone"
+                        class="outline-none border-none cursor-pointer bg-transparent text-TextColor-0 font-Urbanist font-bold text-sm w-full"
+                      >
+                        <option
+                          value="zone1"
+                          class="bg-PrimaryColor-0 text-white font-Urbanist"
+                        >
+                          Central Time - US & Canada (8:01am)
+                        </option>
+                        <option
+                          value="zone2"
+                          class="bg-PrimaryColor-0 text-white font-Urbanist"
+                        >
+                          Central Time - UK & London (7:01am)
+                        </option>
+                        <option
+                          value="zone3"
+                          class="bg-PrimaryColor-0 text-white font-Urbanist"
+                        >
+                          Central Time - USA & Dubai (6:01am)
+                        </option>
+                        <option
+                          value="zone4"
+                          class="bg-PrimaryColor-0 text-white font-Urbanist"
+                        >
+                          Central Time - UK & London (5:01am)
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <p
+                      class="flex items-center gap-[6px] font-Urbanist font-medium text-TextColor2-0 text-2xl"
                     >
-                      Central Time - UK & London (7:01am)
-                    </option>
-                    <option
-                      value="zone3"
-                      class="bg-PrimaryColor-0 text-white font-Urbanist"
-                    >
-                      Central Time - USA & Dubai (6:01am)
-                    </option>
-                    <option
-                      value="zone4"
-                      class="bg-PrimaryColor-0 text-white font-Urbanist"
-                    >
-                      Central Time - UK & London (5:01am)
-                    </option>
-                  </select>
+                      <img
+                        src="assets/images/clock.png"
+                        draggable="false"
+                        alt="Icon"
+                      />1 Hour
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <p
-                  class="flex items-center gap-[6px] font-Urbanist font-medium text-TextColor2-0 text-2xl"
-                >
-                  <img
-                    src="assets/images/clock.png"
-                    draggable="false"
-                    alt="Icon"
-                  />1 Hour
-                </p>
               </div>
             </div>
           </div>
           <div
-            class="col-span-12 sm:col-span-4 bg-PrimaryColor-0 text-center pt-10"
+            class="col-span-12 sm:col-span-4 border-t border-[#d1d1d1] bg-white sm:bg-PrimaryColor-0 text-center pt-10"
           >
             <h5
-              class="font-Urbanist font-semibold text-white text-xl text-center"
+              class="font-Urbanist font-semibold text-HeadingColor-0 sm:text-white text-xl text-center"
             >
               Seleact <br />
               Available Slot
             </h5>
             <div class="flex justify-between px-[22px]">
-              <button>
+              <button class="invert-[1] sm:invert-0">
                 <img
                   src="assets/images/long-arrow-left.png"
                   draggable="false"
@@ -145,11 +153,13 @@
                 />
               </button>
               <div>
-                <h1 class="font-Urbanist font-extrabold text-[72px] text-white">
+                <h1
+                  class="font-Urbanist font-extrabold text-5xl pt-4 sm:pt-0 sm:text-[72px] text-HeadingColor-0 sm:text-white"
+                >
                   8
                 </h1>
               </div>
-              <button>
+              <button class="invert-[1] sm:invert-0">
                 <img
                   src="assets/images/long-arrow-right.png"
                   draggable="false"
@@ -157,14 +167,14 @@
                 />
               </button>
             </div>
-            <div class="-mt-4">
+            <div class="mt-2sm:-mt-4">
               <h4
-                class="font-Urbanist font-semibold text-white text-lg uppercase"
+                class="font-Urbanist font-semibold text-HeadingColor-0 sm:text-white text-lg uppercase"
               >
                 September
               </h4>
               <h6
-                class="font-Urbanist font-medium text-sm text-[#d1f3ff] uppercase"
+                class="font-Urbanist font-medium text-sm text-HeadingColor-0 sm:text-[#d1f3ff] uppercase"
               >
                 Tuesday
               </h6>
@@ -175,56 +185,56 @@
               >
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     9:30 AM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="active font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="active font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     10:30 AM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     11:30 AM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     12:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     01:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     02:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     03:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     4:30 PM
                   </button>
@@ -238,91 +248,91 @@
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     9:30 AM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     10:30 AM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     11:30 AM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     12:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     01:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     02:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     03:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     4:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     5:30PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     02:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     03:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 border-b border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-b sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     4:30 PM
                   </button>
                 </li>
                 <li>
                   <button
-                    class="font-Urbanist font-medium text-white text-lg w-full py-3 relative z-10 transition-all duration-500 hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-0 before:bg-white before:h-0 before:w-full before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0 hover:before:bottom-auto"
+                    class="font-Urbanist font-medium w-9/12 mb-1 rounded-full sm:rounded-none sm:mb-0 mx-auto text-HeadingColor-0 border border-PrimaryColor-0 sm:border-none sm:text-white text-lg sm:w-full py-3 sm:border-[#ffffff2d] relative z-10 transition-all duration-500 hover:text-white sm:hover:text-PrimaryColor-0 before:absolute before:bottom-0 before:top-auto before:left-1/2 sm:before:left-0 before:bg-PrimaryColor-0 sm:before:bg-white before:h-full sm:before:h-0 before:w-0 sm:before:w-full before:rounded-full sm:before:rounded-none before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 sm:hover:before:h-full hover:before:top-0 hover:before:bottom-auto after:absolute after:rounded-full after:right-0 after:top-0 after:w-[18px] after:h-[18px] after:scale-0 after:transition-all after:duration-500 after:bg-white after:bg-[url(assets/images/check.png)] after:border-2 after:border-white"
                   >
                     5:30PM
                   </button>

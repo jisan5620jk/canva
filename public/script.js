@@ -1,3 +1,5 @@
+//Time Button Active
+
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.querySelectorAll(".time-btn button, .time-btn button");
 
@@ -10,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+//Custom Tab
 
 document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".tab-btn");
@@ -29,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+//Calender
 
 const calendarDays = document.getElementById("calendar-days");
 const month = document.getElementById("month");
