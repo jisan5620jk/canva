@@ -1,3 +1,18 @@
+//Change Date Number
+
+let currentDate = new Date();
+document.getElementById("number").textContent = currentDate.getDate();
+
+document.getElementById("left-arrow").addEventListener("click", () => {
+  currentDate.setDate(currentDate.getDate() - 1);
+  document.getElementById("number").textContent = currentDate.getDate();
+});
+
+document.getElementById("right-arrow").addEventListener("click", () => {
+  currentDate.setDate(currentDate.getDate() + 1);
+  document.getElementById("number").textContent = currentDate.getDate();
+});
+
 //Time Button Active
 
 document.addEventListener("DOMContentLoaded", function () {
