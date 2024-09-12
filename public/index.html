@@ -23,12 +23,12 @@
                     src="assets/images/logo.png"
                     draggable="false"
                     alt="Website Logo"
-                    class="w-6/12 sm:w-[inherit] m-auto"
+                    class="w-4/12 sm:w-[inherit] m-auto"
                   />
                 </a>
               </div>
               <div class="sm:mt-2">
-                <div class="absolute top-[108px] -left-11">
+                <div class="absolute top-[54px] sm:top-[108px] -left-11">
                   <img
                     src="assets/images/profile-img.png"
                     draggable="false"
@@ -37,7 +37,7 @@
                 </div>
                 <div class="pl-[50px]">
                   <p
-                    class="text-TextColor-0 font-Urbanist font-semibold flex items-center gap-[6px] pt-4"
+                    class="text-TextColor-0 font-Urbanist font-semibold flex items-center gap-[6px] pt-2 sm:pt-4"
                   >
                     <img
                       src="assets/images/location.png"
@@ -46,34 +46,34 @@
                     />London, UK
                   </p>
                   <h3
-                    class="font-Urbanist font-extrabold text-2xl text-PrimaryColor-0 mt-1 mb-1"
+                    class="font-Urbanist font-extrabold text-xl sm:text-2xl text-PrimaryColor-0 sm:mt-1 sm:mb-1"
                   >
                     David Chua
                   </h3>
                   <h5
-                    class="font-Urbanist font-bold text-xl text-HeadingColor-0"
+                    class="font-Urbanist font-bold text-lg sm:text-xl text-HeadingColor-0"
                   >
                     30 Minute Meeting
                   </h5>
                 </div>
                 <div class="pl-6">
-                  <div class="flex gap-[6px] mt-[20px]">
+                  <div class="flex gap-[6px] sm:mt-[20px]">
                     <div class="mt-1">
                       <img src="assets/images/calendar.png" alt="Icon" />
                     </div>
                     <div class="flex-1">
                       <p
-                        class="font-Urbanist font-bold text-lg text-TextColor2-0 mb-[6px]"
+                        class="font-Urbanist font-bold text-lg text-TextColor2-0 sm:mb-[6px]"
                       >
                         Thursday, September 15th, 2024
                       </p>
                       <h3
-                        class="font-Urbanist font-bold text-xl sm:text-2xl text-HeadingColor-0 mb-[6px]"
+                        class="font-Urbanist font-bold text-xl sm:text-2xl text-HeadingColor-0 sm:mb-[6px]"
                       >
                         9:30 AM - 11:00 AM
                       </h3>
                       <h6
-                        class="font-Urbanist font-bold text-lg text-HeadingColor-0"
+                        class="font-Urbanist font-bold text-base sm:text-lg text-HeadingColor-0"
                       >
                         Time Zone
                       </h6>
@@ -123,7 +123,7 @@
                   </div>
                   <div>
                     <p
-                      class="flex items-center gap-[6px] font-Urbanist font-medium text-TextColor2-0 text-2xl"
+                      class="flex items-center gap-[6px] font-Urbanist font-medium text-TextColor2-0 text-xl sm:text-2xl"
                     >
                       <img
                         src="assets/images/clock.png"
@@ -145,7 +145,9 @@
               Seleact <br class="hidden sm:block" />
               Available Slot
             </h5>
-            <div class="flex justify-between px-[22px]">
+            <div
+              class="flex items-center justify-between pt-2 sm:pt-0 px-[22px]"
+            >
               <button id="left-arrow" class="invert-[1] sm:invert-0">
                 <img
                   src="assets/images/long-arrow-left.png"
@@ -153,13 +155,30 @@
                   alt="Icon"
                 />
               </button>
+              <div
+                class="font-Urbanist font-extrabold text-HeadingColor-0 sm:text-white text-xl sm:text sm:hidden"
+                id="extra-prev-date"
+              ></div>
+              <div
+                class="font-Urbanist font-extrabold text-HeadingColor-0 sm:text-white text-3xl sm:hidden"
+                id="prev-date"
+              ></div>
               <div>
-                <h1 id="number"
-                  class="font-Urbanist font-extrabold text-5xl pt-2 sm:pt-0 sm:text-[72px] text-HeadingColor-0 sm:text-white"
+                <h1
+                  id="number"
+                  class="font-Urbanist font-extrabold text-5xl sm:text-[72px] text-HeadingColor-0 sm:text-white"
                 >
                   8
                 </h1>
               </div>
+              <div
+                class="font-Urbanist font-extrabold text-HeadingColor-0 sm:text-white text-3xl sm:hidden"
+                id="next-date"
+              ></div>
+              <div
+                class="font-Urbanist font-extrabold text-HeadingColor-0 sm:text-white text-xl sm:hidden"
+                id="extra-next-date"
+              ></div>
               <button id="right-arrow" class="invert-[1] sm:invert-0">
                 <img
                   src="assets/images/long-arrow-right.png"

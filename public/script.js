@@ -1,17 +1,39 @@
 //Change Date Number
 
 let currentDate = new Date();
-document.getElementById("number").textContent = currentDate.getDate();
+updateDates();
 
 document.getElementById("left-arrow").addEventListener("click", () => {
   currentDate.setDate(currentDate.getDate() - 1);
-  document.getElementById("number").textContent = currentDate.getDate();
+  updateDates();
 });
 
 document.getElementById("right-arrow").addEventListener("click", () => {
   currentDate.setDate(currentDate.getDate() + 1);
-  document.getElementById("number").textContent = currentDate.getDate();
+  updateDates();
 });
+
+function updateDates() {
+  document.getElementById("number").textContent = currentDate.getDate();
+
+  let prevDate = new Date(currentDate);
+  prevDate.setDate(currentDate.getDate() - 1);
+  document.getElementById("prev-date").textContent = prevDate.getDate();
+
+  let extraPrevDate = new Date(currentDate);
+  extraPrevDate.setDate(currentDate.getDate() - 2);
+  document.getElementById("extra-prev-date").textContent =
+    extraPrevDate.getDate();
+
+  let nextDate = new Date(currentDate);
+  nextDate.setDate(currentDate.getDate() + 1);
+  document.getElementById("next-date").textContent = nextDate.getDate();
+
+  let extraNextDate = new Date(currentDate);
+  extraNextDate.setDate(currentDate.getDate() + 2);
+  document.getElementById("extra-next-date").textContent =
+    extraNextDate.getDate();
+}
 
 //Time Button Active
 

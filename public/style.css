@@ -748,6 +748,14 @@ video {
   top: 6px;
 }
 
+.top-\[\]{
+  top: ;
+}
+
+.top-\[54px\]{
+  top: 54px;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -829,6 +837,14 @@ video {
   margin-top: 20px;
 }
 
+.-mt-1{
+  margin-top: -0.25rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .block{
   display: block;
 }
@@ -847,6 +863,10 @@ video {
 
 .hidden{
   display: none;
+}
+
+.\!hidden{
+  display: none !important;
 }
 
 .h-\[476px\]{
@@ -871,6 +891,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-4\/12{
+  width: 33.333333%;
 }
 
 .flex-1{
@@ -1074,6 +1098,10 @@ video {
   padding-top: 1rem;
 }
 
+.pt-3{
+  padding-top: 0.75rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1087,9 +1115,14 @@ video {
   line-height: 2rem;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base{
@@ -1110,6 +1143,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -1405,6 +1443,10 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:top-\[108px\]{
+    top: 108px;
+  }
+
   .sm\:col-span-4{
     grid-column: span 4 / span 4;
   }
@@ -1429,8 +1471,32 @@ video {
     margin-top: 0.5rem;
   }
 
+  .sm\:mt-1{
+    margin-top: 0.25rem;
+  }
+
+  .sm\:mb-1{
+    margin-bottom: 0.25rem;
+  }
+
+  .sm\:mt-\[20px\]{
+    margin-top: 20px;
+  }
+
+  .sm\:mb-\[6px\]{
+    margin-bottom: 6px;
+  }
+
   .sm\:block{
     display: block;
+  }
+
+  .sm\:\!block{
+    display: block !important;
+  }
+
+  .sm\:hidden{
+    display: none;
   }
 
   .sm\:w-\[inherit\]{
@@ -1466,12 +1532,16 @@ video {
     padding-bottom: 0px;
   }
 
+  .sm\:pt-10{
+    padding-top: 2.5rem;
+  }
+
   .sm\:pt-0{
     padding-top: 0px;
   }
 
-  .sm\:pt-10{
-    padding-top: 2.5rem;
+  .sm\:pt-4{
+    padding-top: 1rem;
   }
 
   .sm\:text-2xl{
@@ -1481,6 +1551,16 @@ video {
 
   .sm\:text-\[72px\]{
     font-size: 72px;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-\[\#d1f3ff\]{
