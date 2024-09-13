@@ -26,24 +26,28 @@
     bottom: auto;
   }
   .time-btn button.active::after {
-  transform: scale(0);
-}
+    transform: scale(0);
+  }
 }
 
-.tab-content.active {
+.tab-content.active,
+.tab-content2.active {
   display: block;
 }
 
-.tab-btn.active button {
+.tab-btn.active button,
+.tab-btn2.active button {
   color: #089acd;
   border-color: #089acd;
 }
 
-.tab-btn.active button::before {
+.tab-btn.active button::before,
+.tab-btn2.active button::before {
   height: 8px;
 }
 
-.tab-btn.active button img {
+.tab-btn.active button img,
+.tab-btn2.active button img {
   filter: brightness(100%) invert(0);
   opacity: 100%;
 }
@@ -167,6 +171,113 @@
 .event {
   border: 2px solid #007bff;
   border-radius: 50%;
+}
+
+.calendar2 {  
+  width: 100%;  
+  overflow: hidden;  
+}  
+
+.calendar-header2 {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  padding: 10px 28px;  
+}  
+
+#month2 {  
+  font-size: 30px;  
+  line-height: 18px;  
+  color: #002931;  
+  font-weight: 500;  
+  font-family: "Urbanist";  
+  text-align: center;  
+}  
+
+#year2 {  
+  font-size: 18px;  
+  line-height: 18px;  
+  color: #777777;  
+  font-weight: 500;  
+  font-family: "Urbanist";  
+  padding-top: 12px;  
+}  
+
+.calendar-header2 button {  
+  background: none;  
+  border: none;  
+  cursor: pointer;  
+}  
+
+.calendar-body2 {  
+  padding: 10px;  
+}  
+
+.calendar-weekdays2,  
+.calendar-days2 {  
+  display: grid;  
+  grid-template-columns: repeat(7, 1fr);  
+}  
+
+.calendar-weekdays2 div {  
+  font-size: 16px;  
+  line-height: 18px;  
+  text-transform: uppercase;  
+  color: #777777;  
+  text-align: center;  
+  font-weight: 700;  
+  font-family: "Urbanist", "sans-serif";  
+  margin: 7px auto 20px;  
+}  
+
+.calendar-days2 div {  
+  font-size: 20px;  
+  line-height: 18px;  
+  text-transform: uppercase;  
+  color: #dddddd;  
+  font-weight: 600;  
+  font-family: "Urbanist";  
+  text-align: center;  
+  width: 37px;  
+  height: 37px;  
+  line-height: 37px;  
+  border-radius: 5px;  
+  transition: all 0.5s;  
+  margin: 13px auto;  
+}  
+
+.calendar-days2 div:hover {  
+  background-color: #ebeef0;  
+  color: #555555;  
+}  
+
+.calendar-days2 div.today2 {  
+  filter: drop-shadow(2.237px 3.316px 4.5px rgba(8, 153, 205, 0.45));  
+  background-color: #0899cd;  
+  color: #fff;  
+}  
+
+.calendar-weekdays2 {  
+  font-weight: bold;  
+}  
+
+.calendar-days2 div {  
+  cursor: pointer;  
+}  
+
+.calendar-days2 div:hover {  
+  background: #f0f0f0;  
+}  
+
+.today2 {  
+  background: #007bff;  
+  color: white;  
+  border-radius: 50%;  
+}  
+
+.event2 {  
+  border: 2px solid #007bff;  
+  border-radius: 50%;  
 }
 
 @tailwind base;
